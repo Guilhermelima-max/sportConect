@@ -4,10 +4,14 @@
   import SC from '../assets/login/sc.png'; // caminho do SC logo
   import { Image } from 'react-native'; // biblioteca para importar imagens
 import GoogleLogo from '../assets/login/google.png';
+import { useNavigation } from '@react-navigation/native';
+
 
   export default function App() {
+    const navigation = useNavigation();
     const handlePress = () => {
-    console.log('Botão pressionado');
+       navigation.navigate('Home');
+   
   }; // função criada para o botão.
 
   const abrirLink = () => {
